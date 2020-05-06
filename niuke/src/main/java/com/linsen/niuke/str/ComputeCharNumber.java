@@ -9,12 +9,6 @@ public class ComputeCharNumber {
         String str = scanner.nextLine();
         char charWord = scanner.nextLine().charAt(0);
         int number = 0;
-        String[] strArray = str.split("");
-//        for (String s : strArray) {
-//            if (s.equalsIgnoreCase(charWord)) {
-//                number++;
-//            }
-//        }
         for(int i = 0; i < str.length(); i++){
             if(charWord == str.charAt(i)){
                 number++;
