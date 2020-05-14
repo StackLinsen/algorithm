@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="algorithm" />
+        <module name="leetcode" />
         <module name="niuke" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="algorithm" target="1.5" />
+      <module name="leetcode" target="1.5" />
       <module name="niuke" target="8" />
     </bytecodeTargetLevel>
   </component>
