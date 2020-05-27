@@ -10,8 +10,15 @@ public class Main {
 //        obj.put(4,1);
 //        System.out.println(obj.get(1));
 //        System.out.println(obj.get(2));
-        FindDuplicate findDuplicate = new FindDuplicate();
-        int[] nums = {1,3,4,2,2};
-        System.out.println(findDuplicate.findDuplicate(nums));
+//        FindDuplicate findDuplicate = new FindDuplicate();
+//        int[] nums = {1,3,4,2,2};
+//        System.out.println(findDuplicate.findDuplicate(nums));
+
+        SubArraysDivByK subArraysDivByK = new SubArraysDivByK();
+        int[] num = {4,5,0,-2,-3,1};
+        int K = 5;
+        System.out.println(subArraysDivByK.subArraysDivByK_2(num, K));
+
+//        System.out.println(-3 % 2);
     }
 }
