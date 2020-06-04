@@ -1,6 +1,8 @@
 package com.linsen.leetcode;
 
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) throws Exception{
 //        int capacity = 2;
@@ -70,5 +72,10 @@ public class Main {
 
 //        SumNums sumNums = new SumNums();
 //        System.out.println(sumNums.solution(4));
+
+        ProductExceptSelf productExceptSelf = new ProductExceptSelf();
+        int[] nums = {1,2,3,4};
+        System.out.println(Arrays.toString(productExceptSelf.solution_3(nums)));
+
     }
 }
