@@ -1,6 +1,5 @@
 package com.linsen.leetcode;
 
-import com.linsen.leetcode.concurrent.Foo;
 
 public class Main {
     public static void main(String[] args) throws Exception{
@@ -68,7 +67,8 @@ public class Main {
 //        thread1.start();
 
 
-        SumNums sumNums = new SumNums();
-        System.out.println(sumNums.solution(4));
+
+//        SumNums sumNums = new SumNums();
+//        System.out.println(sumNums.solution(4));
     }
 }
