@@ -1,6 +1,7 @@
 package com.linsen.leetcode;
 
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Main {
@@ -73,9 +74,13 @@ public class Main {
 //        SumNums sumNums = new SumNums();
 //        System.out.println(sumNums.solution(4));
 
-        ProductExceptSelf productExceptSelf = new ProductExceptSelf();
-        int[] nums = {1,2,3,4};
-        System.out.println(Arrays.toString(productExceptSelf.solution_3(nums)));
+//        ProductExceptSelf productExceptSelf = new ProductExceptSelf();
+//        int[] nums = {1,2,3,4};
+//        System.out.println(Arrays.toString(productExceptSelf.solution_3(nums)));
+
+        SpiralOrder spiralOrder = new SpiralOrder();
+        int[][] nums = new int[][]{{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+        System.out.println(Arrays.toString(spiralOrder.solution(nums)));
 
     }
 }
