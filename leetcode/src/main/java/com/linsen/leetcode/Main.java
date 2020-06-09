@@ -78,9 +78,15 @@ public class Main {
 //        int[] nums = {1,2,3,4};
 //        System.out.println(Arrays.toString(productExceptSelf.solution_3(nums)));
 
-        SpiralOrder spiralOrder = new SpiralOrder();
-        int[][] nums = new int[][]{{1,2,3,4},{5,6,7,8},{9,10,11,12}};
-        System.out.println(Arrays.toString(spiralOrder.solution(nums)));
+//        SpiralOrder spiralOrder = new SpiralOrder();
+//        int[][] nums = new int[][]{{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+//        System.out.println(Arrays.toString(spiralOrder.solution(nums)));
 
+//        EquationsPossible equationsPossible = new EquationsPossible();
+//        String[] equations = new String[]{"a==b", "b==c","a==c"};
+//        System.out.println(equationsPossible.solution(equations));
+
+        TranslateNum translateNum = new TranslateNum();
+        System.out.println(translateNum.solution(12258));
     }
 }
