@@ -23,14 +23,38 @@ public class TranslateNum {
         }else if(num < 99){
             return 1;
         }else{
-            int num1 = Integer.valueOf(String.valueOf(num).substring(1));
-            int sum1 = solution(num1);
-            if(Integer.valueOf(String.valueOf(num).substring(0,2)) <= 25){
+            int sum1 = 0;
+            if(Integer.valueOf(String.valueOf(num).substring(0,1)) != 0){
+                int num1 = Integer.valueOf(String.valueOf(num).substring(1));
+                sum1 += solution(num1);
+            }
+            if(Integer.valueOf(String.valueOf(num).substring(0,2)) <= 25 && Integer.valueOf(String.valueOf(num).substring(0,2)) > 9){
                 int num2 = Integer.valueOf(String.valueOf(num).substring(2));
                 sum1 += solution(num2);
             }
             return sum1;
         }
+    }
+
+
+    /**
+     * 简化版本
+     * @param num
+     * @return
+     */
+    public int solution_2(int num){
+        if (num == 0) {
+            return 1;
+        }
+        if (num < 10) {
+            return 1;
+        }
+        if (num % 100 < 26 && num % 100 > 9) {
+            return solution_2(num / 10) + solution_2(num / 100);
+        } else {
+            return solution_2(num / 10);
+        }
+
     }
 
 

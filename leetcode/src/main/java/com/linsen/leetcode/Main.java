@@ -86,7 +86,22 @@ public class Main {
 //        String[] equations = new String[]{"a==b", "b==c","a==c"};
 //        System.out.println(equationsPossible.solution(equations));
 
-        TranslateNum translateNum = new TranslateNum();
-        System.out.println(translateNum.solution(12258));
+//        TranslateNum translateNum = new TranslateNum();
+//        System.out.println(translateNum.solution(1402));
+
+//        IsPalindrome isPalindrome = new IsPalindrome();
+//        System.out.println(isPalindrome.solution_2(12321));
+
+        Codec.TreeNode treeNode = new Codec.TreeNode(1);
+        treeNode.left = new Codec.TreeNode(2);
+        treeNode.right = new Codec.TreeNode(3);
+        treeNode.left.left = new Codec.TreeNode(4);
+        treeNode.left.right = new Codec.TreeNode(5);
+        treeNode.right.right = new Codec.TreeNode(6);
+        treeNode.left.right.left = new Codec.TreeNode(7);
+        treeNode.left.right.right = new Codec.TreeNode(8);
+
+        Codec codec = new Codec();
+        System.out.println(codec.serialize(treeNode));
     }
 }
