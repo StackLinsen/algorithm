@@ -11,6 +11,9 @@ public class PatternMatching {
         String value = "dogcatcatdog";
         String pattern = "aaaa";
         System.out.println(solution(pattern, value));
+
+        System.out.println(String.valueOf(null));
+        System.out.println(String.valueOf((Object) null));
     }
 
 
