@@ -1,8 +1,6 @@
 package com.linsen.leetcode;
 
-import sun.reflect.generics.tree.Tree;
 
-import java.util.List;
 
 /**
  * @author lane.lin
