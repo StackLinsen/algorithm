@@ -2,10 +2,7 @@ package com.linsen.leetcode;
 
 
 import java.lang.reflect.Array;
-import java.util.AbstractCollection;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Iterator;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws Exception{
@@ -111,6 +108,19 @@ public class Main {
 //        recoverFromPreorder.solution("1-2--3--4-5--6--7");
 
 
-        System.out.println(String.format("%s会员最晚退房时间为次日%s点", "nihao"));
+
+//        List<Integer> arr = Collections.singletonList(1);
+//        arr.add(2);
+//        System.out.println(arr.toString());
+
+        Integer[] values = new Integer[]{new Integer(129), new Integer(130), new Integer(131)};
+        Integer[] valuesCopy = Arrays.copyOf(values, values.length);
+
+        for(int i = 0; i< 3; i++){
+            System.out.println(values[i] == valuesCopy[i]);
+        }
+
+        valuesCopy[0] = new Integer(135);
+        System.out.println(Arrays.toString(values));
     }
 }
